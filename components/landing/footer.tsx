@@ -50,7 +50,7 @@ function BrandSection() {
         성장을 지원합니다.
       </p>
       <div className="text-sm text-white/40">
-        © 2025 Growth OS. All rights reserved.
+        © 2026 Growth OS. All rights reserved.
       </div>
     </div>
   );
@@ -58,7 +58,7 @@ function BrandSection() {
 
 function BottomBar() {
   return (
-    <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div className="border-t border-white/10 mt-12 pt-8 flex justify-end">
       <div className="flex items-center gap-6 text-sm text-white/40">
         <a href="#" className="hover:text-white/60 transition-colors">
           개인정보처리방침
@@ -66,11 +66,6 @@ function BottomBar() {
         <a href="#" className="hover:text-white/60 transition-colors">
           이용약관
         </a>
-      </div>
-      <div className="flex items-center gap-4">
-        <span className="text-xs text-white/40">
-          Trusted by 100+ growth companies
-        </span>
       </div>
     </div>
   );

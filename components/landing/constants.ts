@@ -38,7 +38,7 @@ export const FOOTER_LINKS: NavItem[] = [
 export const BARRIERS: Barrier[] = [
   {
     icon: TrendingDown,
-    question: "광고비를 늘리면 적자가 될까 두려우신가요?",
+    question: "광고비 증액, 성장이 될지 적자가 될지 불안하지 않으십니까?",
     title: "Scaling의 불확실성",
     detail:
       "근거 없는 증액은 성장이 아닌 매몰 비용이 됩니다. 데이터 기반 의사결정 없이는 Scale-up이 곧 Burn-rate 가속이 됩니다.",
@@ -46,7 +46,7 @@ export const BARRIERS: Barrier[] = [
   },
   {
     icon: Calculator,
-    question: "LTV와 공헌이익을 모른 채 ROAS에만 매몰되어 있진 않나요?",
+    question: "매출은 오르는데 왜 통장 잔고는 그대로인지 의문이신가요?",
     title: "Unit Economics의 공백",
     detail:
       "ROAS 300%가 이익일까요, 손해일까요? 진짜 수익 구조를 모르면 매출이 올라도 적자가 커집니다.",
@@ -54,7 +54,7 @@ export const BARRIERS: Barrier[] = [
   },
   {
     icon: History,
-    question: "마케팅 팀이 전략 대신 엑셀 노가다에 시간을 쓰고 있진 않나요?",
+    question: "고급 인력이 아직도 엑셀 노가다에 시간을 뺏기고 있나요?",
     title: "운영 리소스 병목",
     detail:
       "고급 인력이 데이터 취합과 리포트 작성에 주당 20시간 이상을 소비한다면, 그것은 전략이 아닌 비용입니다.",
@@ -62,7 +62,7 @@ export const BARRIERS: Barrier[] = [
   },
   {
     icon: EyeOff,
-    question: "공들여 데려온 고객이 어느 지점에서 이탈하는지조차 알 수 없나요?",
+    question: "어디서 고객이 새고 있는지 모른 채 광고비만 태우고 계신가요?",
     title: "블랙박스 마케팅",
     detail:
       "원인 모를 데이터 누수가 귀중한 성장을 가로막고 있습니다. 퍼널의 어디서 고객이 사라지는지 보이지 않으면 개선도 불가능합니다.",

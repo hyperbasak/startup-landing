@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 
-import { DashboardMockup, SocialProof } from "./hero";
+import { DashboardMockup } from "./hero";
 
 function HeroBadge() {
   return (
@@ -80,7 +80,6 @@ function HeroContent() {
       <HeroHeadline />
       <HeroSubheadline />
       <HeroCTAButtons />
-      <SocialProof />
     </div>
   );
 }
