@@ -15,20 +15,17 @@ function SectionHeader() {
         variant="destructive"
       />
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 mt-6 text-balance">
-        이 중 하나라도 해당된다면,
+        우리는 단순히 광고를 돌리는 대행사가 아닙니다.
         <br className="hidden sm:block" />
-        <span className="text-primary">지금 당장 Growth OS가 필요합니다</span>
+        <span className="text-primary">대표님의 밤잠을 설치게 하는 그 고민을 해결합니다.</span>
       </h2>
-      <p className="text-muted-foreground text-lg">
-        PMF를 검증한 후에도 Scale-up에 실패하는 이유는 대부분 아래 병목에 있습니다.
-      </p>
     </div>
   );
 }
 
 function BarriersGrid() {
   return (
-    <div className="grid md:grid-cols-2 gap-3 lg:gap-4">
+    <div className="grid md:grid-cols-2 gap-4 lg:gap-6">
       {BARRIERS.map((barrier, index) => (
         <BarrierCard key={index} barrier={barrier} />
       ))}

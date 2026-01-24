@@ -42,9 +42,8 @@ function HeroHeadline() {
 function HeroSubheadline() {
   return (
     <p className="text-lg text-muted-foreground leading-relaxed max-w-xl [word-break:keep-all]">
-      더 이상 감에 의존하는 Burn-rate는 그만하십시오.{" "}
       <span className="text-foreground font-semibold">
-        10억을 태워도 무너지지 않는 데이터 기반의 스케일업 엔진
+        데이터 기반의 스케일업 엔진
       </span>
       을 전문가가 직접 구축하고 운영합니다.
     </p>
