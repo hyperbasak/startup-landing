@@ -1,5 +1,7 @@
 "use client";
 
+import { ChevronRight, ChevronDown } from "lucide-react";
+
 import type { GrowthSystem } from "../types";
 
 interface SystemCardProps {
@@ -15,7 +17,8 @@ function SystemCard({ system }: SystemCardProps) {
   const bulletClass = isAccent ? "bg-accent" : "bg-primary";
 
   return (
-    <div className="group bg-card rounded-xl border border-border p-5 lg:p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20">
+    <div className="group bg-card rounded-xl border border-border p-5 lg:p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20 relative">
+
       <div className="flex items-center gap-3 mb-4">
         <div
           className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-105 ${iconBgClass}`}
@@ -45,15 +48,37 @@ function SystemCard({ system }: SystemCardProps) {
   );
 }
 
+function FlowArrow({ isLast }: { isLast: boolean; }) {
+  if (isLast) return null;
+
+  return (
+    <>
+      {/* Desktop: horizontal arrow */}
+      <div className="hidden lg:flex items-center justify-center">
+        <ChevronRight className="w-6 h-6 text-primary/40" />
+      </div>
+      {/* Mobile: vertical arrow */}
+      <div className="flex lg:hidden items-center justify-center py-2">
+        <ChevronDown className="w-6 h-6 text-primary/40" />
+      </div>
+    </>
+  );
+}
+
 interface SystemGridProps {
   systems: GrowthSystem[];
 }
 
 export function SystemAccordionList({ systems }: SystemGridProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 lg:gap-4">
+    <div className="flex flex-col lg:flex-row lg:items-stretch gap-0 lg:gap-2">
       {systems.map((system, index) => (
-        <SystemCard key={index} system={system} />
+        <div key={index} className="flex flex-col lg:flex-row lg:items-center lg:flex-1">
+          <div className="lg:flex-1">
+            <SystemCard system={system} />
+          </div>
+          <FlowArrow isLast={index === systems.length - 1} />
+        </div>
       ))}
     </div>
   );
