@@ -7,7 +7,7 @@ export function DesktopCTA() {
     <div className="hidden lg:block">
       <Button
         asChild
-        className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-6"
+        className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-5 py-5"
       >
         <a href="#start-now">무료 성장 진단 신청</a>
       </Button>
