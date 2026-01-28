@@ -35,7 +35,7 @@ function MobileMenu({
 }
 
 export function Header() {
-  const isScrolled = useScroll();
+  const { isScrolled, isVisible } = useScroll();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
@@ -47,11 +47,12 @@ export function Header() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
           ? "bg-white/70 backdrop-blur-md border-b border-border/50 shadow-sm"
-          : "bg-transparent"
+          : "bg-transparent",
+        isVisible ? "translate-y-0" : "-translate-y-full"
       )}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-14 lg:h-16">
           <div className="flex items-center">
             <Logo />
             <DesktopNav items={NAV_ITEMS} />
