@@ -45,9 +45,8 @@ function BrandSection() {
   return (
     <div className="lg:col-span-2 space-y-4">
       <Logo textClassName="text-white" />
-      <p className="text-white/60 max-w-md leading-relaxed">
-        데이터 기반의 스케일업 엔진을 통해 PMF를 검증한 스타트업의 지속 가능한
-        성장을 지원합니다.
+      <p className="text-white/60 max-w-md leading-relaxed [word-break:keep-all]">
+        비즈니스 본질에 집중한 데이터 매니지먼트로, 흔들리지 않는 지속 가능한 성장 구조를 설계합니다.
       </p>
       <div className="text-sm text-white/40">
         © 2026 Growth OS. All rights reserved.

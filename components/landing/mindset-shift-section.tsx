@@ -1,5 +1,7 @@
 "use client";
 
+import { ChevronRight } from "lucide-react";
+
 export function MindsetShiftSection() {
   return (
     <section className="relative py-24 lg:py-32 bg-slate-900 overflow-hidden">
@@ -103,8 +105,8 @@ export function MindsetShiftSection() {
             {/* Background fill */}
             <div className="absolute inset-[1px] bg-slate-900/95 rounded-[7px]" />
             {/* Text */}
-            <span className="relative z-10 text-slate-100 font-medium">
-              성장 자산 구축하기
+            <span className="flex items-center gap-1 relative z-10 text-slate-100 font-medium">
+              자산화 가능성 확인 <ChevronRight className="w-4 h-4" />
             </span>
           </a>
         </div>
