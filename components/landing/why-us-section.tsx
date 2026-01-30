@@ -10,7 +10,7 @@ function SectionHeader() {
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 mt-6 text-balance">
         일반 마케팅 대행사 vs <span className="text-primary">Growth OS</span>
       </h2>
-      <p className="text-muted-foreground text-lg">
+      <p className="text-muted-foreground text-lg [word-break:keep-all]">
         같은 비용, 완전히 다른 결과. 무엇이 다른지 직접 비교해보세요.
       </p>
     </div>
