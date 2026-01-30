@@ -113,24 +113,29 @@ export const GROWTH_SYSTEMS: GrowthSystem[] = [
 
 export const COMPARISONS: Comparison[] = [
   {
-    category: "성과 측정",
-    legacy: "ROAS 리포트 의존",
-    growthOS: "공헌이익 실시간 추적",
+    category: "의사결정 기준",
+    legacy: "광고 매체상의 표면적 지표",
+    growthOS: "영업이익 및 고객 미래 가치(LTV)",
   },
   {
-    category: "의사결정",
-    legacy: "담당자 경험과 감",
-    growthOS: "데이터 시그널 + 전문가 판단",
+    category: "비용의 성격",
+    legacy: "성과 확인 후 휘발되는 소모비",
+    growthOS: "성장 데이터를 축적하는 투자비",
   },
   {
-    category: "운영 방식",
-    legacy: "인력 기반 수동 대행",
-    growthOS: "시스템 + 전담팀 운영",
+    category: "전략의 연속성",
+    legacy: "담당자 교체 시 히스토리 단절",
+    growthOS: "영구히 작동하는 전략 시스템 구축",
   },
   {
-    category: "데이터 자산",
-    legacy: "계약 종료 시 소멸",
-    growthOS: "영구 보존 DB 구축",
+    category: "데이터 소유권",
+    legacy: "대행사 내부 노하우로 종속",
+    growthOS: "귀사만을 위한 독보적 성장 데이터 자산화",
+  },
+  {
+    category: "최종 결과물",
+    legacy: "일회성 매출 상승과 보고서",
+    growthOS: "시장을 장악하는 강력한 데이터 권력",
   },
 ];
 

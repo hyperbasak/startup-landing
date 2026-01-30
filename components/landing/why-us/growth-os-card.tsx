@@ -19,7 +19,7 @@ export function GrowthOSCard({ comparisons }: GrowthOSCardProps) {
         </div>
         <div>
           <h3 className="text-xl font-bold text-foreground">Growth OS</h3>
-          <p className="text-sm text-primary">Scale-up Operating System</p>
+          <p className="text-sm text-primary">Your Growth Partner</p>
         </div>
       </div>
 
