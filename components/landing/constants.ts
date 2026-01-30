@@ -23,15 +23,17 @@ import type {
 } from "./types";
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "Scaling Barrier", href: "#scaling-barrier" },
-  { label: "Growth OS", href: "#growth-os" },
-  { label: "Why Us?", href: "#why-us" },
+  { label: "데이터 전략", href: "#data-strategy" },
+  { label: "수익 최적화", href: "#revenue-optimization" },
+  { label: "통합 관리", href: "#unified-management" },
+  { label: "자산화 시스템", href: "#asset-system" },
 ];
 
 export const FOOTER_LINKS: NavItem[] = [
-  { label: "Scaling Barrier", href: "#scaling-barrier" },
-  { label: "Growth OS", href: "#growth-os" },
-  { label: "Why Us?", href: "#why-us" },
+  { label: "데이터 전략", href: "#data-strategy" },
+  { label: "수익 최적화", href: "#revenue-optimization" },
+  { label: "통합 관리", href: "#unified-management" },
+  { label: "자산화 시스템", href: "#asset-system" },
   { label: "진단 신청", href: "#start-now" },
 ];
 
