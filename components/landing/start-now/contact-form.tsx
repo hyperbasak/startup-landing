@@ -181,7 +181,7 @@ export function ContactForm({
             <LoadingSpinner />
           ) : (
             <span className="flex items-center gap-2">
-              성장 가속 시스템 설계 상담하기
+              성장 진단 신청하기
               <ArrowRight className="w-5 h-5" />
             </span>
           )}

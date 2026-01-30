@@ -24,13 +24,13 @@ function SectionHeader() {
     <div>
       <SectionBadge icon={Zap} text="Start Now" variant="accent" />
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 mt-6 text-balance [word-break:keep-all]">
-        휘발되는 광고비 대신,{" "}
-        <span className="text-primary">영구적인 성장 자산</span>을 구축하세요
+        휘발되는 광고비 지출을 멈추고,{" "}
+        <span className="text-primary">영구적인 성장 시스템</span>을 이식하세요.
       </h2>
       <p className="text-lg text-muted-foreground leading-relaxed [word-break:keep-all]">
-        귀사의 현 상황에 맞는 시스템 설계와 운영 전략을 전문가와 상담하세요.{" "}
-        <strong className="text-foreground">맞춤형 성장 진단 리포트</strong>를
-        무료로 제공해드립니다.
+        귀사의 수익 구조와 성장 잠재력을 객관적으로 진단해 드립니다.{" "}
+        <strong className="text-foreground">LTV/CAC 분석이 담긴 맞춤형 진단 리포트</strong>를
+        무료로 제공합니다.
       </p>
     </div>
   );

@@ -148,8 +148,8 @@ export const BUDGET_OPTIONS: BudgetOption[] = [
 ];
 
 export const BENEFITS: Benefit[] = [
-  { icon: FileText, text: "맞춤형 성장 진단 리포트" },
-  { icon: Rocket, text: "즉시 적용 가능한 액션 플랜" },
+  { icon: FileText, text: "데이터 기반 성장 진단서" },
+  { icon: Rocket, text: "수익 구조 개선 액션 플랜" },
   { icon: ShieldCheck, text: "비용 부담 없는 완전 무료" },
 ];
 
