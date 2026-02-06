@@ -96,8 +96,8 @@ function HeroCTAButtons() {
           size="lg"
           className="border-border/60 hover:border-border hover:bg-muted/50 font-medium !pl-5 !pr-4 py-6 text-base bg-transparent text-muted-foreground hover:text-foreground transition-all"
         >
-          <a href="#growth-os">
-            Growth OS 살펴보기
+          <a href="/solutions">
+            CMO 전략 확인하기
             <ChevronRight />
           </a>
         </Button>

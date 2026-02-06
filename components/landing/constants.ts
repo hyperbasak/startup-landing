@@ -1,156 +1,34 @@
-import {
-  TrendingDown,
-  Calculator,
-  History,
-  EyeOff,
-  BarChart3,
-  Activity,
-  Network,
-  Fingerprint,
-  Database,
-  FileText,
-  Rocket,
-  ShieldCheck,
-} from "lucide-react";
-
-import type {
-  NavItem,
-  Barrier,
-  GrowthSystem,
-  Comparison,
-  BudgetOption,
-  Benefit,
-} from "./types";
-
-export const NAV_ITEMS: NavItem[] = [
-  { label: "데이터 전략", href: "#data-strategy" },
-  { label: "수익 최적화", href: "#revenue-optimization" },
-  { label: "통합 관리", href: "#unified-management" },
-  { label: "자산화 시스템", href: "#asset-system" },
-];
-
-export const FOOTER_LINKS: NavItem[] = [
-  { label: "데이터 전략", href: "#data-strategy" },
-  { label: "수익 최적화", href: "#revenue-optimization" },
-  { label: "통합 관리", href: "#unified-management" },
-  { label: "자산화 시스템", href: "#asset-system" },
-  { label: "진단 신청", href: "#start-now" },
-];
-
-export const BARRIERS: Barrier[] = [
-  {
-    icon: TrendingDown,
-    question: "광고비를 늘려도 성과가 날까요?",
-    title: "Scaling의 불확실성",
-    detail: "데이터 기반 의사결정 없이는 Scale-up이 리스크가 됩니다.",
-    cost: "기회비용 발생",
-  },
-  {
-    icon: Calculator,
-    question: "매출은 오르는데 이익은 그대로인가요?",
-    title: "Unit Economics의 공백",
-    detail: "진짜 수익 구조를 알아야 건강한 성장이 가능합니다.",
-    cost: "현금 흐름 악화",
-  },
-  {
-    icon: History,
-    question: "리포트 작성에 너무 많은 시간을 쓰고 있나요?",
-    title: "운영 리소스 병목",
-    detail: "핵심 인력이 전략이 아닌 단순 업무에 묶여 있습니다.",
-    cost: "비전략 업무 과다",
-  },
-  {
-    icon: EyeOff,
-    question: "고객이 어디서 이탈하는지 파악되고 있나요?",
-    title: "블랙박스 마케팅",
-    detail: "퍼널의 누수 지점을 모르면 개선도 불가능합니다.",
-    cost: "전환율 최적화 기회 상실",
-  },
-];
-
-export const GROWTH_SYSTEMS: GrowthSystem[] = [
-  {
-    icon: Database,
-    title: "데이터 수집",
-    subtitle: "영구 보존 DB 구축",
-    description: "",
-    features: ["실시간 API 데이터 수집", "영구 보존 데이터베이스", "히스토리 기반 분석"],
-    color: "primary",
-  },
-  {
-    icon: BarChart3,
-    title: "수익 분석",
-    subtitle: "Unit Economics 관리",
-    description: "",
-    features: ["LTV/CAC 실시간 모니터링", "공헌이익 기반 의사결정", "수익 최적 광고비 운영"],
-    color: "accent",
-  },
-  {
-    icon: Activity,
-    title: "시그널 감지",
-    subtitle: "실시간 액션 시그널",
-    description: "",
-    features: ["스케일업 타이밍 포착", "리스크 조기 경보", "증액/감액 즉시 판단"],
-    color: "primary",
-  },
-  {
-    icon: Network,
-    title: "채널 확장",
-    subtitle: "성공 로직 전파",
-    description: "",
-    features: ["크로스 채널 성과 분석", "승리 패턴 추출", "신규 채널 무리스크 진입"],
-    color: "accent",
-  },
-  {
-    icon: Fingerprint,
-    title: "패턴 자산화",
-    subtitle: "고전환 공식 정립",
-    description: "",
-    features: ["고성과 소재 DNA 분석", "콘텐츠 제작 가이드", "A/B 테스트 자동화"],
-    color: "primary",
-  },
-];
+import type { Comparison } from "./types";
 
 export const COMPARISONS: Comparison[] = [
   {
-    category: "의사결정 기준",
-    legacy: "광고 매체상의 표면적 지표",
-    growthOS: "영업이익 및 고객 미래 가치(LTV)",
+    category: "Main Concept",
+    legacy: "단순 실행 및 대행",
+    growthOS: "맞춤형 성장 설계",
   },
   {
-    category: "비용의 성격",
-    legacy: "성과 확인 후 휘발되는 소모비",
-    growthOS: "성장 데이터를 축적하는 투자비",
+    category: "맞춤화 수준",
+    legacy: "업종별 범용 매뉴얼 기반 실행",
+    growthOS: "귀사 현황에 최적화된 전략 설계",
   },
   {
-    category: "전략의 연속성",
-    legacy: "담당자 교체 시 히스토리 단절",
-    growthOS: "영구히 작동하는 전략 시스템 구축",
+    category: "의사결정",
+    legacy: "매체 지표 중심의 표면적 분석",
+    growthOS: "영업이익 및 고객 미래 가치(LTV) 중심",
   },
   {
-    category: "데이터 소유권",
-    legacy: "대행사 내부 노하우로 종속",
-    growthOS: "귀사만을 위한 독보적 성장 데이터 자산화",
+    category: "비용",
+    legacy: "성과 확인 후 사라지는 소모성 광고비",
+    growthOS: "성장 데이터를 축적하는 자본적 투자비",
   },
   {
-    category: "최종 결과물",
-    legacy: "일회성 매출 상승과 보고서",
-    growthOS: "시장을 장악하는 강력한 데이터 권력",
+    category: "지속성",
+    legacy: "담당자 교체 시 데이터 및 히스토리 단절",
+    growthOS: "인적 의존 없는 영구적 전략 시스템 구축",
+  },
+  {
+    category: "결과",
+    legacy: "일회성 매출 상승과 형식적인 보고서",
+    growthOS: "시장을 장악하는 강력한 데이터 권력과 자산화",
   },
 ];
-
-export const BUDGET_OPTIONS: BudgetOption[] = [
-  { value: "under-1000", label: "1,000만원 미만" },
-  { value: "1000-3000", label: "1,000만원 ~ 3,000만원" },
-  { value: "3000-5000", label: "3,000만원 ~ 5,000만원" },
-  { value: "5000-1억", label: "5,000만원 ~ 1억" },
-  { value: "over-1억", label: "1억 이상" },
-];
-
-export const BENEFITS: Benefit[] = [
-  { icon: FileText, text: "데이터 기반 성장 진단서" },
-  { icon: Rocket, text: "수익 구조 개선 액션 플랜" },
-  { icon: ShieldCheck, text: "비용 부담 없는 완전 무료" },
-];
-
-export const DASHBOARD_CHART_DATA = [40, 55, 45, 60, 75, 65, 80, 90, 85, 95, 88, 100];

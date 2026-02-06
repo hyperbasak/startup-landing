@@ -1,6 +1,6 @@
 "use client";
 
-import { ScrollIndicator } from "./common";
+import { ScrollIndicator } from "../common";
 import { COMPARISONS } from "./constants";
 import { LegacyCard, GrowthOSCard } from "./why-us";
 

@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import { Zap } from "lucide-react";
 
-import { SectionBadge } from "./common";
+import { SectionBadge } from "./section-badge";
 import { ContactForm, SuccessMessage, BenefitsList, TrustSignals } from "./start-now";
 import type { ContactFormData } from "./types";
 
@@ -25,7 +25,7 @@ function SectionHeader() {
       <SectionBadge icon={Zap} text="Start Now" variant="accent" />
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 mt-6 text-balance [word-break:keep-all]">
         휘발되는 광고비 지출을 멈추고,{" "}
-        <span className="text-primary">영구적인 성장 시스템</span>을 이식하세요.
+        <span className="text-primary">영구적인 성장 자산</span>을 구축하세요.
       </h2>
       <p className="text-lg text-muted-foreground leading-relaxed [word-break:keep-all]">
         귀사의 수익 구조와 성장 잠재력을 객관적으로 진단해 드립니다.{" "}
@@ -80,10 +80,19 @@ function FormCard({
   );
 }
 
-export function StartNowSection() {
+export function StartNowSection({
+  variant = "white",
+}: {
+  variant?: "white" | "gradient";
+}) {
   const [formData, setFormData] = useState<ContactFormData>(INITIAL_FORM_DATA);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
+  const bgClass =
+    variant === "gradient"
+      ? "bg-gradient-to-b from-muted/50 to-white"
+      : "bg-white";
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -105,7 +114,7 @@ export function StartNowSection() {
   return (
     <section
       id="start-now"
-      className="py-16 lg:py-24 bg-white"
+      className={`py-16 lg:py-24 ${bgClass}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">

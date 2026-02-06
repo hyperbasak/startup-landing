@@ -31,16 +31,16 @@ export function FeatureSection({
 
   return (
     <section id={id} className={`py-20 lg:py-24 ${bgClass}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto mb-16 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 mt-6 leading-tight [word-break:keep-all]">
             {headline}
           </h2>
-          <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed [word-break:keep-all]">
+          <p className="text-muted-foreground text-lg sm:text-2xl leading-relaxed [word-break:keep-all]">
             {description}
           </p>
         </div>
-        <div>
+        <div className="">
           {points.map((point, index) => (
             <PointCard
               key={index}

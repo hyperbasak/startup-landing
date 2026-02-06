@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { cn } from "@/lib/utils";
 
-import { Logo } from "./common";
+import { Logo } from "./ui/logo";
 import { NAV_ITEMS } from "./constants";
 import {
   DesktopNav,
@@ -35,7 +35,7 @@ function MobileMenu({
 }
 
 export function Header() {
-  const { isScrolled, isVisible } = useScroll();
+  const { isVisible, setIsHeaderHovered } = useScroll();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
@@ -43,11 +43,10 @@ export function Header() {
 
   return (
     <header
+      onMouseEnter={() => setIsHeaderHovered(true)}
+      onMouseLeave={() => setIsHeaderHovered(false)}
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-white/70 backdrop-blur-md border-b border-border/50 shadow-sm"
-          : "bg-transparent",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white backdrop-blur-md border-b border-border/50 shadow-sm",
         isVisible ? "translate-y-0" : "-translate-y-full"
       )}
     >
