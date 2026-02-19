@@ -91,7 +91,7 @@ export function DataMoat() {
 
         {/* Our company label */}
         <rect x="230" y="42" width="45" height="14" rx="3" fill="white" stroke="#00C781" strokeWidth="1" />
-        <text x="252" y="52" className="fill-primary text-[7px] font-medium" textAnchor="middle">Growth OS</text>
+        <text x="252" y="52" className="fill-primary text-[7px] font-medium" textAnchor="middle">Growth Block</text>
 
         {/* Competitor label */}
         <rect x="230" y="125" width="45" height="14" rx="3" fill="white" stroke="#9ca3af" strokeWidth="1" />

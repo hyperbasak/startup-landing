@@ -1,2 +1,2 @@
 export { LegacyCard } from "./legacy-card";
-export { GrowthOSCard } from "./growth-os-card";
+export { GrowthBlockCard } from "./growth-block-card";

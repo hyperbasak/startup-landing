@@ -18,7 +18,7 @@ export function SuccessMessage() {
       </p>
       <div className="bg-muted/50 rounded-xl p-4">
         <p className="text-sm text-muted-foreground">
-          추가 문의: <strong className="text-foreground">contact@growth-os.kr</strong>
+          추가 문의: <strong className="text-foreground">contact@growth-block.kr</strong>
         </p>
       </div>
     </div>

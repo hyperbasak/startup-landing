@@ -32,7 +32,7 @@ export function UnifiedManagementSection() {
       headline="흩어진 마케팅이 하나로 연결됩니다."
       description={
         <>
-          매체별로 흩어진 데이터와 여러 대행사와의 복잡한 소통을 Growth OS 하나로 단축하세요.
+          매체별로 흩어진 데이터와 여러 대행사와의 복잡한 소통을 Growth Block 하나로 단축하세요.
           <br />
           모든 마케팅 실행이 하나의 흐름으로 정렬되어, 비즈니스의 전체 성과가 한눈에 들어옵니다.
         </>

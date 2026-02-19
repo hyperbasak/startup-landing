@@ -36,7 +36,7 @@ export function Logo({
       </div>
       {showText && (
         <span className={`font-semibold text-lg ${textClassName}`}>
-          Growth OS
+          Growth Block
         </span>
       )}
     </Link>

@@ -107,7 +107,7 @@ export function StrategyReport() {
           <div>
             <div className="flex items-center gap-1.5 mb-1">
               <Activity className="w-4 h-4 text-primary" />
-              <p className="text-xs text-gray-500 font-medium">Growth OS</p>
+              <p className="text-xs text-gray-500 font-medium">Growth Block</p>
             </div>
             <h3 className="text-base font-bold text-gray-900">실시간 피드</h3>
           </div>

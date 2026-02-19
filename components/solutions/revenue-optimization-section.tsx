@@ -34,7 +34,7 @@ export function RevenueOptimizationSection() {
         <>
           단순한 유입을 넘어 최종 결제까지의 모든 경로를 단단하게 연결합니다.
           <br />
-          소중한 예산이 성장의 밑거름이 되도록, Growth OS가 모든 전환 과정을 정밀하게 관리합니다.
+          소중한 예산이 성장의 밑거름이 되도록, Growth Block이 모든 전환 과정을 정밀하게 관리합니다.
         </>
       }
       points={POINTS}

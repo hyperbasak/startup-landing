@@ -4,11 +4,11 @@ import { Check } from "lucide-react";
 
 import type { Comparison } from "../types";
 
-interface GrowthOSCardProps {
+interface GrowthBlockCardProps {
   comparisons: Comparison[];
 }
 
-export function GrowthOSCard({ comparisons }: GrowthOSCardProps) {
+export function GrowthBlockCard({ comparisons }: GrowthBlockCardProps) {
   return (
     <div className="relative bg-gradient-to-br from-white to-primary/5 rounded-3xl border-2 border-primary/30 p-6 lg:p-8 shadow-xl shadow-primary/10">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 rounded-3xl" />
@@ -18,7 +18,7 @@ export function GrowthOSCard({ comparisons }: GrowthOSCardProps) {
           <Check className="w-6 h-6 text-primary-foreground" />
         </div>
         <div>
-          <h3 className="text-xl font-bold text-foreground">Growth OS</h3>
+          <h3 className="text-xl font-bold text-foreground">Growth Block</h3>
           <p className="text-sm text-primary">Your Growth Partner</p>
         </div>
       </div>
@@ -36,7 +36,7 @@ export function GrowthOSCard({ comparisons }: GrowthOSCardProps) {
               <p className="text-xs font-medium text-primary mb-1 flex items-center gap-1.5">
                 {item.category}
               </p>
-              <p className="text-foreground font-medium">{item.growthOS}</p>
+              <p className="text-foreground font-medium">{item.growthBlock}</p>
             </div>
           </div>
         ))}

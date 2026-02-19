@@ -18,7 +18,7 @@ export function ActionReport() {
               </svg>
             </div>
             <div>
-              <div className="text-white text-xs font-medium">Growth OS Alert</div>
+              <div className="text-white text-xs font-medium">Growth Block Alert</div>
               <div className="text-white/70 text-[10px]">지금 · 의사결정 요청</div>
             </div>
           </div>

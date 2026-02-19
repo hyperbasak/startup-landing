@@ -43,10 +43,10 @@ function ContactInfo() {
       <ul className="space-y-3 text-sm text-white/60">
         <li>
           <a
-            href="mailto:contact@growth-os.kr"
+            href="mailto:contact@growth-block.kr"
             className="hover:text-white transition-colors"
           >
-            contact@growth-os.kr
+            contact@growth-block.kr
           </a>
         </li>
         <li>서울특별시 강남구 테헤란로</li>
@@ -64,7 +64,7 @@ function BrandSection() {
         성장의 병목을 해소하는 파트너 CMO. 이제 소모되는 비용을 멈추고, 성장 자본을 쌓아가세요.
       </p>
       <div className="text-sm text-white/40">
-        © 2026 Growth OS. All rights reserved.
+        © 2026 Growth Block. All rights reserved.
       </div>
     </div>
   );

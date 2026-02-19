@@ -75,7 +75,7 @@ export function OrchestrationHub() {
         {/* Hub header */}
         <rect x="110" y="55" width="100" height="24" rx="8" fill="#00C781" />
         <rect x="110" y="71" width="100" height="8" fill="#00C781" />
-        <text x="160" y="71" className="fill-white text-[9px] font-bold" textAnchor="middle">Growth OS</text>
+        <text x="160" y="71" className="fill-white text-[9px] font-bold" textAnchor="middle">Growth Block</text>
 
         {/* Hub content - Strategy cards */}
         <g transform="translate(118, 88)">
@@ -103,7 +103,7 @@ export function OrchestrationHub() {
           <text x="12" y="3" className="fill-muted-foreground text-[8px]">개별 관리 필요</text>
           <text x="85" y="3" className="fill-muted-foreground text-[8px]">→</text>
           <rect x="100" y="-4" width="8" height="8" fill="#00C781" rx="1" />
-          <text x="112" y="3" className="fill-muted-foreground text-[8px]">Growth OS 조율</text>
+          <text x="112" y="3" className="fill-muted-foreground text-[8px]">Growth Block 조율</text>
           <text x="175" y="3" className="fill-muted-foreground text-[8px]">→</text>
           <rect x="190" y="-4" width="8" height="8" fill="#f0fdf4" stroke="#bbf7d0" strokeWidth="1" rx="1" />
           <text x="202" y="3" className="fill-muted-foreground text-[8px]">정돈된 실행</text>

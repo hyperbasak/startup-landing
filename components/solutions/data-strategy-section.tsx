@@ -30,7 +30,7 @@ export function DataStrategySection() {
     <FeatureSection
       id="data-strategy"
       headline="성장에 최적화된 마케팅 의사결정"
-      description="데이터 분석부터 실행 판단까지 Growth OS가 책임집니다."
+      description="데이터 분석부터 실행 판단까지 Growth Block이 책임집니다."
       points={POINTS}
       variant="white"
     />

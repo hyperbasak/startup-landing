@@ -69,7 +69,7 @@ export function HeroSection() {
         {/* Key message */}
         <div className="inline-block">
           <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white [word-break:keep-all] leading-relaxed">
-            Growth OS의 4가지 핵심 전략은
+            Growth Block의 4가지 핵심 전략은
             <br className="hidden sm:block" />
             마케팅의 모든 과정을 귀사의{" "}
             <span className="relative inline-block text-[#A2E3FF]">
