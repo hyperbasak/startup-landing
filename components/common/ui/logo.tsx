@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -31,9 +32,7 @@ export function Logo({
       onClick={handleClick}
       className={`flex items-center gap-2 ${className}`}
     >
-      <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-        <span className="text-primary-foreground font-bold text-sm">G</span>
-      </div>
+      <Image src="/logo.png" alt="Growth Block" width={32} height={32} />
       {showText && (
         <span className={`font-semibold text-lg ${textClassName}`}>
           Growth Block
