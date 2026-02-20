@@ -4,7 +4,9 @@ import { useEffect } from "react";
 
 import { Header } from "@/components/common/header";
 import { HeroSection } from "@/components/landing/hero-section";
+import { EmpathySection } from "@/components/landing/empathy-section";
 import { BlockServiceSection } from "@/components/landing/block-service-section";
+import { CustomizedArchitectureSection } from "@/components/landing/customized-architecture-section";
 import { CoreCompetencySection } from "@/components/landing/core-competency-section";
 import { WhyUsSection } from "@/components/landing/why-us-section";
 import { StartNowSection } from "@/components/common/start-now-section";
@@ -27,7 +29,9 @@ export default function LandingPage() {
       <ScrollToTopHandler />
       <Header />
       <HeroSection />
+      <EmpathySection />
       <BlockServiceSection />
+      <CustomizedArchitectureSection />
       <CoreCompetencySection />
       <WhyUsSection />
       <StartNowSection />

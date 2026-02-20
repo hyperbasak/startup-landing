@@ -87,7 +87,7 @@ function FeatureGrid() {
 
 export function CoreCompetencySection() {
   return (
-    <section id="competency" className="py-16 lg:py-24 bg-gradient-to-b from-muted/50 to-white">
+    <section id="competency" className="py-16 lg:py-24 bg-gradient-to-b from-white to-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader />
         <FeatureGrid />

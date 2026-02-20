@@ -2,7 +2,8 @@
 
 import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { StrategyReport } from "./hero";
+import hero from "./assets/hero.png";
+import Image from "next/image";
 
 function HeroBadge() {
   return (
@@ -122,16 +123,19 @@ function HeroContent() {
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[800px] flex flex-col justify-center py-24 lg:py-32 overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent" />
-
+    <section className="relative min-h-[800px] flex flex-col justify-center py-24 lg:py-32 overflow-hidden bg-[#f0f1f0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
           <div className="flex-1 lg:max-w-[60%]">
             <HeroContent />
           </div>
-          <div className="shrink-0">
-            <StrategyReport />
+          <div className="lg:max-w-[40%]">
+            <Image
+              src={hero}
+              alt="hero image"
+              className="w-full h-auto transition-opacity duration-2000 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent),linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] [mask-composite:intersect]"
+              priority
+            />
           </div>
         </div>
       </div>
