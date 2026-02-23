@@ -12,9 +12,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Growth Block | 데이터 기반 스케일업 엔진",
+  title: "Growth Block | 폭발적 성장을 위한 파트너 CMO",
   description:
-    "10억을 태워도 무너지지 않는 데이터 기반의 스케일업 엔진. 유의미한 시장 반응을 확인한 비즈니스를 위한 성장 운영체제를 이식합니다.",
+    "성장의 병목을 해소하는 파트너 CMO. Growth Block 하나로 스케일업에 필요한 모든 전략과 실행을 끝내세요. 수익 구조를 직접 설계하고 운영하는 CMO 팀이 귀사만의 독보적인 성장 시스템을 완성합니다.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
