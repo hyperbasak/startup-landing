@@ -15,7 +15,6 @@ export const metadata: Metadata = {
   title: "Growth Block | 데이터 기반 스케일업 엔진",
   description:
     "10억을 태워도 무너지지 않는 데이터 기반의 스케일업 엔진. 유의미한 시장 반응을 확인한 비즈니스를 위한 성장 운영체제를 이식합니다.",
-  generator: "v0.app",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
