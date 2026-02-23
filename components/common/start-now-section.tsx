@@ -3,7 +3,7 @@
 import type { ChangeEvent, FormEvent } from "react";
 import { useState } from "react";
 
-import { Zap } from "lucide-react";
+import { Clock, Zap } from "lucide-react";
 
 import { SectionBadge } from "./section-badge";
 import { ContactForm, SuccessMessage, BenefitsList, TrustSignals } from "./start-now";
@@ -28,9 +28,8 @@ function SectionHeader() {
         <span className="text-primary">영구적인 성장 자산</span>을 구축하세요.
       </h2>
       <p className="text-lg text-muted-foreground leading-relaxed [word-break:keep-all]">
-        귀사의 수익 구조와 성장 잠재력을 객관적으로 진단해 드립니다.{" "}
-        <strong className="text-foreground">LTV/CAC 분석이 담긴 맞춤형 진단 리포트</strong>를
-        무료로 제공합니다.
+        귀사 비즈니스 산업군에 특화된 표준 지표와 추정되는 수익 누수 지점을 판독합니다.
+        Growth Block의 전략적 가설이 담긴 <strong className="text-foreground">진단 리포트</strong>를 무료로 제공합니다.
       </p>
     </div>
   );
@@ -42,6 +41,12 @@ function LeftContent() {
       <SectionHeader />
       <BenefitsList />
       <TrustSignals />
+      <div className="flex items-start gap-3 rounded-2xl bg-primary/5 border border-primary/10 px-5 py-4">
+        <Clock className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+        <p className="text-sm text-foreground font-medium [word-break:keep-all]">
+          리포트의 완성도를 위해 주간 단 2곳의 기업에게만 분석 리소스를 할당합니다.
+        </p>
+      </div>
     </div>
   );
 }

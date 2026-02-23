@@ -88,11 +88,8 @@ export function ContactForm({
     <>
       <div className="text-center mb-8">
         <h3 className="text-xl font-bold text-foreground mb-2">
-          무료 성장 진단 신청
+          무료 진단 리포트 신청
         </h3>
-        <p className="text-sm text-muted-foreground">
-          간단한 정보 입력으로 맞춤 진단을 받아보세요
-        </p>
       </div>
 
       <form onSubmit={onSubmit} className="space-y-4">
@@ -181,14 +178,14 @@ export function ContactForm({
             <LoadingSpinner />
           ) : (
             <span className="flex items-center gap-2">
-              성장 진단 신청하기
+              진단 리포트 신청하기
               <ArrowRight className="w-5 h-5" />
             </span>
           )}
         </Button>
 
         <p className="text-xs text-center text-muted-foreground pt-1">
-          신청 정보는 진단 목적으로만 사용되며, 제3자에게 제공되지 않습니다.
+          신청 정보는 리포트 작성 목적으로만 사용되며, 제3자에게 제공되지 않습니다.
         </p>
       </form>
     </>

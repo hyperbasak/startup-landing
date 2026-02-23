@@ -21,9 +21,9 @@ export function BenefitsList() {
 
 export function TrustSignals() {
   const signals = [
-    "상담 후 구매 압박 없음",
-    "1:1 맞춤 컨설팅",
-    "48시간 내 리포트 전달",
+    "부담 없는 무료 리포트",
+    "개별 비즈니스 맞춤 설계",
+    "48시간 내 리포트 발송",
   ];
 
   return (

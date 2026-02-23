@@ -87,7 +87,7 @@ function HeroCTAButtons() {
           className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold !pl-5 !pr-4 py-6 text-base shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all"
         >
           <a href="#start-now">
-            무료 성장 진단 신청
+            무료 진단 리포트 신청
             <ChevronRight />
           </a>
         </Button>
@@ -104,7 +104,7 @@ function HeroCTAButtons() {
         </Button>
       </div>
       <p className="text-sm text-muted-foreground">
-        현재 상태를 객관적으로 진단해 드립니다. 도입 여부는 진단 후 결정하세요.
+        도메인 분석으로 수익 누수 지점을 추론합니다. 전략적 가설이 담긴 리포트를 먼저 받아보세요.
       </p>
     </div>
   );
