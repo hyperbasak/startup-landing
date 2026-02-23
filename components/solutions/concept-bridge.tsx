@@ -31,7 +31,7 @@ export function ConceptBridge() {
       </div>
 
       <div className="space-y-10">
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xl sm:text-3xl lg:text-4xl font-bold text-white [word-break:keep-all] leading-relaxed">
             마케팅이 자산이 되는 경험
             <br />

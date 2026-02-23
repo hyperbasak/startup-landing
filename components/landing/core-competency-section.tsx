@@ -40,7 +40,7 @@ const COMPETENCY = [
 
 function SectionHeader() {
   return (
-    <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+    <div className="text-center mb-12 lg:mb-16">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-6 [word-break:keep-all]">
         맞춤형 서비스의 압도적인 성과
         <br />
@@ -77,7 +77,7 @@ function FeatureCard({ feature }: { feature: (typeof COMPETENCY)[number]; }) {
 
 function FeatureGrid() {
   return (
-    <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+    <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
       {COMPETENCY.map((feature, index) => (
         <FeatureCard key={index} feature={feature} />
       ))}
@@ -88,7 +88,7 @@ function FeatureGrid() {
 export function CoreCompetencySection() {
   return (
     <section id="competency" className="py-16 lg:py-24 bg-gradient-to-b from-white to-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader />
         <FeatureGrid />
       </div>

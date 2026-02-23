@@ -6,7 +6,7 @@ import { LegacyCard, GrowthBlockCard } from "./why-us";
 
 function SectionHeader() {
   return (
-    <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+    <div className="text-center mb-12 lg:mb-16">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 mt-6 text-balance">
         일반 마케팅 대행사 vs <span className="text-primary">Growth Block</span>
       </h2>
@@ -19,7 +19,7 @@ function SectionHeader() {
 
 function ComparisonCards() {
   return (
-    <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+    <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
       <LegacyCard comparisons={COMPARISONS} />
       <GrowthBlockCard comparisons={COMPARISONS} />
     </div>
@@ -28,7 +28,7 @@ function ComparisonCards() {
 
 function ServiceNote() {
   return (
-    <div className="mt-8 max-w-5xl mx-auto">
+    <div className="mt-8">
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 text-center">
         <p className="text-foreground font-medium text-lg [word-break:keep-all]">
           Growth Block은 단순 대행을 넘어,{" "}
@@ -57,7 +57,7 @@ function BottomCTA() {
 export function WhyUsSection() {
   return (
     <section id="why-us" className="py-16 lg:py-24 bg-gradient-to-b from-white to-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader />
         <ComparisonCards />
         <ServiceNote />

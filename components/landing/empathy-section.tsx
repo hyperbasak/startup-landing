@@ -67,8 +67,8 @@ function Card({ card }: { card: EmpathyCard; }) {
 export function EmpathySection() {
   return (
     <section className="py-16 lg:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6 [word-break:keep-all]">
             회사마다 마케팅 전략은{" "}
             <span className="text-primary">당연히</span> 달라야 합니다.
@@ -77,7 +77,7 @@ export function EmpathySection() {
             남들과 똑같은 전략과 실행으로는 독보적인 성과를 기대하기 어렵습니다.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {CARDS.map((card) => (
             <Card key={card.title} card={card} />
           ))}

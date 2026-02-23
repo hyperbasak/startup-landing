@@ -88,7 +88,7 @@ function BottomBar() {
 export function Footer() {
   return (
     <footer className="bg-foreground text-white py-12 lg:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <BrandSection />
           <QuickLinks />

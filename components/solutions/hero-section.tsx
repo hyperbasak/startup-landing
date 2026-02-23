@@ -34,7 +34,7 @@ export function HeroSection() {
         />
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
 
           <br />
@@ -48,7 +48,7 @@ export function HeroSection() {
         </h2>
 
         {/* Sub copy */}
-        <p className="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl mb-12 mx-auto [word-break:keep-all]">
+        <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-12 [word-break:keep-all]">
           일시적인 매출 상승은 누구나 만들 수 있습니다.
           <br className="hidden sm:block" />
           하지만 그 과정에서 얻은 인사이트가 자산으로 남지 않는다면,

@@ -9,7 +9,7 @@ import customizedArchitectureV3 from "./assets/customized_architecture_v3.png";
 
 function SectionHeader() {
   return (
-    <div className="max-w-7xl text-center max-w-5xl mx-auto mb-12 lg:mb-16">
+    <div className="text-center mb-12 lg:mb-16">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-6 [word-break:keep-all]">
         정해진 구성은 없습니다.{" "}
         <br className="hidden sm:block" />
@@ -219,10 +219,10 @@ function ArchitectureDiagram() {
 export function CustomizedArchitectureSection() {
   return (
     <section className="py-16 lg:py-24 bg-white">
-      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader />
-        <ArchitectureDiagram />
       </div>
+      <ArchitectureDiagram />
     </section>
   );
 }

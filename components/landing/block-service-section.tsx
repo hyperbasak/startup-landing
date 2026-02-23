@@ -5,7 +5,7 @@ import afterBlockService from "./assets/after_block_service.png";
 
 function BlockServiceFlow() {
   return (
-    <div className="max-w-5xl mx-auto my-12 lg:my-16">
+    <div className="my-12 lg:my-16">
       <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-4">
         <div className="flex-1 flex flex-col items-center">
           <span className="inline-block mb-3 px-4 py-1.5 rounded-full bg-amber-50 text-amber-700 text-sm font-semibold tracking-wide">
@@ -70,7 +70,7 @@ function BlockServiceFlow() {
 
 function SectionHeader() {
   return (
-    <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+    <div className="text-center mb-12 lg:mb-16">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-6 [word-break:keep-all]">
         성장을 가로막는 퍼널의 빈틈,
         <br />
@@ -86,7 +86,7 @@ function SectionHeader() {
 export function BlockServiceSection() {
   return (
     <section id="service" className="relative py-16 lg:py-24 overflow-hidden bg-white">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader />
         <BlockServiceFlow />
       </div>

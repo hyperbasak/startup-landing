@@ -124,12 +124,12 @@ function HeroContent() {
 export function HeroSection() {
   return (
     <section className="relative min-h-[800px] flex flex-col justify-center py-24 lg:py-32 overflow-hidden bg-[#f0f1f0]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
-          <div className="flex-1 lg:max-w-[60%]">
+          <div className="flex-1 lg:max-w-[70%]">
             <HeroContent />
           </div>
-          <div className="lg:max-w-[40%]">
+          <div className="lg:max-w-[30%]">
             <Image
               src={hero}
               alt="hero image"
