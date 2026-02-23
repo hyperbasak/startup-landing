@@ -19,7 +19,7 @@ function BlockServiceFlow() {
             />
           </div>
           <p className="mt-3 text-sm font-medium text-amber-700 [word-break:keep-all]">
-            데이터로 유저가 새어나가는 빈틈을 정밀하게 진단합니다.
+            데이터로 성장을 정체시키는 이탈 빈틈과 비효율 구간을 정밀하게 진단합니다.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ function BlockServiceFlow() {
             />
           </div>
           <p className="mt-3 text-sm font-medium text-emerald-700 [word-break:keep-all]">
-            찾아낸 구멍에 딱 맞는 마케팅 블록을 배치해 퍼널을 완성합니다.
+            마케팅 블록으로 빈틈을 보완하고, 목표 지점까지 막힘없는 최적의 퍼널을 완성합니다.
           </p>
         </div>
       </div>
@@ -74,10 +74,10 @@ function SectionHeader() {
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-6 [word-break:keep-all]">
         성장을 가로막는 퍼널의 빈틈,
         <br />
-        <span className="text-primary">마케팅 블록</span>으로 빈틈없이 메웁니다.
+        <span className="text-primary">마케팅 블록</span>으로 최적의 성장 지름길을 개척합니다.
       </h2>
       <p className="text-slate-600 text-lg leading-relaxed [word-break:keep-all]">
-        Growth Block은 유저가 새어나가는 구멍을 정확히 찾아내고, 그 자리에 딱 맞는 마케팅 블록을 배치합니다.
+        Growth Block은 이탈의 빈틈을 메우는 것을 넘어, 유저 여정을 가장 효율적인 경로로 재설계합니다.
       </p>
     </div>
   );
