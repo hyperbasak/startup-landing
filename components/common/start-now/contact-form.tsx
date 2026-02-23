@@ -185,7 +185,16 @@ export function ContactForm({
         </Button>
 
         <p className="text-xs text-center text-muted-foreground pt-1">
-          신청 정보는 리포트 작성 목적으로만 사용되며, 제3자에게 제공되지 않습니다.
+          문의 제출 시{" "}
+          <a
+            href="https://hyperbasak.notion.site/310c6eeafd3780a6be98e6b69e222352?source=copy_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-foreground transition-colors"
+          >
+            개인정보 처리방침
+          </a>
+          에 동의하는 것으로 간주합니다.
         </p>
       </form>
     </>

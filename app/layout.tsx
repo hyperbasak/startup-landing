@@ -12,9 +12,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Growth Block | 폭발적 성장을 위한 파트너 CMO",
+  title: "Growth Block | 수익 구조 설계부터 운영까지",
   description:
-    "성장의 병목을 해소하는 파트너 CMO. Growth Block 하나로 스케일업에 필요한 모든 전략과 실행을 끝내세요. 수익 구조를 직접 설계하고 운영하는 CMO 팀이 귀사만의 독보적인 성장 시스템을 완성합니다.",
+    "단순 광고 집행을 넘어 비즈니스 맞춤형 성장 시스템을 구축합니다. 도메인 분석으로 누수 지점을 판독하고, 전략과 실행을 동시에 책임지는 파트너 CMO 팀의 1:1 맞춤 컨설팅을 경험하세요.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

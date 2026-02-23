@@ -14,7 +14,7 @@ function BrandSection() {
 
 function CompanyInfo() {
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 md:text-right">
       <h4 className="font-semibold mb-4">Business Info</h4>
       <div className="space-y-1.5 text-sm text-white/50">
         <p>주식회사 하이퍼바삭 | 대표자: 김병수</p>
@@ -27,7 +27,7 @@ function CompanyInfo() {
 
 function ContactSection() {
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 md:text-right">
       <h4 className="font-semibold mb-4">Contact</h4>
       <div className="space-y-3 text-sm text-white/60">
         <p>
@@ -71,7 +71,7 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-white py-12 lg:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-10 lg:gap-16">
           <BrandSection />
           <CompanyInfo />
           <ContactSection />
