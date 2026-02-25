@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Clock, Zap } from "lucide-react";
 
 import { SectionBadge } from "./section-badge";
-import { ContactForm, Step2Form, SuccessMessage, BenefitsList, TrustSignals } from "./start-now";
+import { Step1Form, Step2Form, SuccessMessage, BenefitsList, TrustSignals } from "./start-now";
 import type { ContactFormData, Step2FormData } from "./types";
 
 type FormStep = "step1" | "step2" | "done";
@@ -61,7 +61,7 @@ function LeftContent() {
   );
 }
 
-function FormCard({ children }: { children: React.ReactNode }) {
+function FormCard({ children }: { children: React.ReactNode; }) {
   return (
     <div className="relative">
       <div className="bg-white rounded-3xl border border-border shadow-2xl shadow-primary/10 p-6 sm:p-8 lg:p-10">
@@ -157,7 +157,7 @@ export function StartNowSection({
           <LeftContent />
           <FormCard>
             {step === "step1" && (
-              <ContactForm
+              <Step1Form
                 formData={formData}
                 isLoading={isLoading}
                 onChange={handleChange}

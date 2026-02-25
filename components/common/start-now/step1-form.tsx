@@ -78,7 +78,7 @@ function LoadingSpinner() {
   );
 }
 
-export function ContactForm({
+export function Step1Form({
   formData,
   isLoading,
   onChange,
@@ -114,7 +114,7 @@ export function ContactForm({
           <FormField
             id="company"
             label="회사명"
-            placeholder="주식회사 그로스"
+            placeholder="주식회사 그로스블록"
             value={formData.company}
             onChange={onChange}
           />
