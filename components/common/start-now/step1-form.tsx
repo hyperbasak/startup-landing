@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-import { BUDGET_OPTIONS } from "../constants";
+import { BUDGET_OPTIONS, EXTERNAL_LINKS } from "../constants";
 import type { ContactFormData } from "../types";
 
 interface ContactFormProps {
@@ -187,7 +187,7 @@ export function Step1Form({
         <p className="text-xs text-center text-muted-foreground pt-1">
           문의 제출 시{" "}
           <a
-            href="https://hyperbasak.notion.site/310c6eeafd3780a6be98e6b69e222352?source=copy_link"
+            href={EXTERNAL_LINKS.PRIVACY_POLICY}
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-foreground transition-colors"

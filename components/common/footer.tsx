@@ -1,4 +1,5 @@
 import { Logo } from "./ui/logo";
+import { EXTERNAL_LINKS } from "./constants";
 
 function BrandSection() {
   return (
@@ -40,14 +41,14 @@ function BottomBar() {
       </div>
       <div className="flex items-center gap-6 text-sm text-white/40">
         <a
-          href="https://hyperbasak.notion.site/310c6eeafd3780a6be98e6b69e222352?source=copy_link"
+          href={EXTERNAL_LINKS.PRIVACY_POLICY}
           target="_blank"
           className="hover:text-white/60 transition-colors"
         >
           개인정보처리방침
         </a>
         <a
-          href="https://hyperbasak.notion.site/310c6eeafd3780c2a1c1d13c81855e65?source=copy_link"
+          href={EXTERNAL_LINKS.TERMS_OF_SERVICE}
           target="_blank"
           className="hover:text-white/60 transition-colors"
         >

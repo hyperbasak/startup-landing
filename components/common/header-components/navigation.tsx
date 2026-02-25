@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown } from "lucide-react";
+import { ArrowUpRight, ChevronDown } from "lucide-react";
 
 import type { NavItem } from "../types";
 
@@ -80,6 +80,15 @@ function NavLink({ item, className }: { item: NavItem; className: string; }) {
     }
   };
 
+  if (item.external) {
+    return (
+      <a href={item.href} target="_blank" rel="noopener noreferrer" className={`${className} inline-flex items-center gap-1`}>
+        {item.label}
+        <ArrowUpRight className="w-3.5 h-3.5" />
+      </a>
+    );
+  }
+
   if (isPageRoute) {
     return (
       <Link href={item.href} onClick={handleClick} className={className}>
@@ -97,7 +106,7 @@ function NavLink({ item, className }: { item: NavItem; className: string; }) {
 
 export function DesktopNav({ items }: DesktopNavProps) {
   return (
-    <nav className="hidden lg:flex items-center gap-6 ml-3 pl-10 border-l border-border/40">
+    <nav className="hidden lg:flex items-center gap-8 ml-3 pl-10 border-l border-border/40">
       {items.map((item) =>
         item.children ? (
           <DropdownMenu key={item.href} item={item} />
@@ -202,6 +211,22 @@ export function MobileNav({ items, onItemClick }: MobileNavProps) {
               item={item}
               onItemClick={onItemClick}
             />
+          );
+        }
+
+        if (item.external) {
+          return (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={onItemClick}
+              className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+            >
+              {item.label}
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
           );
         }
 

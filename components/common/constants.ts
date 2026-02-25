@@ -2,9 +2,23 @@ import { BarChart3, FileSearch, Milestone } from "lucide-react";
 
 import type { NavItem, BudgetOption, Benefit, SelectOption } from "./types";
 
+export const EXTERNAL_LINKS = {
+  SERVICE_INTRO:
+    "https://hyperbasak.notion.site/Growth-Block-30ec6eeafd3780c1b72ff08dcf87e3b1",
+  PRIVACY_POLICY:
+    "https://hyperbasak.notion.site/310c6eeafd3780a6be98e6b69e222352?source=copy_link",
+  TERMS_OF_SERVICE:
+    "https://hyperbasak.notion.site/310c6eeafd3780c2a1c1d13c81855e65?source=copy_link",
+} as const;
+
 export const NAV_ITEMS: NavItem[] = [
   {
-    label: "Solutions",
+    label: "서비스 소개",
+    href: EXTERNAL_LINKS.SERVICE_INTRO,
+    external: true,
+  },
+  {
+    label: "성장 전략",
     href: "/solutions",
     children: [
       { label: "데이터 전략", href: "/solutions#data-strategy" },
@@ -13,10 +27,6 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "자산화 시스템", href: "/solutions#asset-system" },
     ],
   },
-];
-
-export const FOOTER_LINKS: NavItem[] = [
-  { label: "Solutions", href: "/solutions" },
 ];
 
 export const BUDGET_OPTIONS: BudgetOption[] = [
