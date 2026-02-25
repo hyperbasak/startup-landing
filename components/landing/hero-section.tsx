@@ -104,7 +104,7 @@ function HeroCTAButtons() {
         </Button>
       </div>
       <p className="text-sm text-muted-foreground">
-        도메인 분석으로 수익 누수 지점을 추론합니다. 전략적 가설이 담긴 리포트를 먼저 받아보세요.
+        귀사 도메인 분석부터 예상 수익 누수 지점과 맞춤형 액션 플랜까지, 전문 리포트로 먼저 확인해 보세요.
       </p>
     </div>
   );
