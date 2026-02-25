@@ -178,7 +178,7 @@ export function ContactForm({
             <LoadingSpinner />
           ) : (
             <span className="flex items-center gap-2">
-              진단 리포트 신청하기
+              무료 진단 신청하기
               <ArrowRight className="w-5 h-5" />
             </span>
           )}

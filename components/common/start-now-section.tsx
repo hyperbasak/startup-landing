@@ -6,8 +6,10 @@ import { useState } from "react";
 import { Clock, Zap } from "lucide-react";
 
 import { SectionBadge } from "./section-badge";
-import { ContactForm, SuccessMessage, BenefitsList, TrustSignals } from "./start-now";
-import type { ContactFormData } from "./types";
+import { ContactForm, Step2Form, SuccessMessage, BenefitsList, TrustSignals } from "./start-now";
+import type { ContactFormData, Step2FormData } from "./types";
+
+type FormStep = "step1" | "step2" | "done";
 
 const INITIAL_FORM_DATA: ContactFormData = {
   name: "",
@@ -17,6 +19,14 @@ const INITIAL_FORM_DATA: ContactFormData = {
   email: "",
   contact: "",
   budget: "",
+};
+
+const INITIAL_STEP2_DATA: Step2FormData = {
+  industry: "",
+  businessModel: "",
+  targetAudience: [],
+  primaryProblem: "",
+  coreValuePersona: "",
 };
 
 function SectionHeader() {
@@ -51,34 +61,12 @@ function LeftContent() {
   );
 }
 
-function FormCard({
-  formData,
-  isSubmitted,
-  isLoading,
-  onChange,
-  onSubmit,
-}: {
-  formData: ContactFormData;
-  isSubmitted: boolean;
-  isLoading: boolean;
-  onChange: (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void;
-  onSubmit: (e: FormEvent) => void;
-}) {
+function FormCard({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative">
       <div className="bg-white rounded-3xl border border-border shadow-2xl shadow-primary/10 p-6 sm:p-8 lg:p-10">
-        {isSubmitted ? (
-          <SuccessMessage />
-        ) : (
-          <ContactForm
-            formData={formData}
-            isLoading={isLoading}
-            onChange={onChange}
-            onSubmit={onSubmit}
-          />
-        )}
+        {children}
       </div>
-
       <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
     </div>
@@ -90,8 +78,9 @@ export function StartNowSection({
 }: {
   variant?: "white" | "gradient";
 }) {
+  const [step, setStep] = useState<FormStep>("step1");
   const [formData, setFormData] = useState<ContactFormData>(INITIAL_FORM_DATA);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [step2Data, setStep2Data] = useState<Step2FormData>(INITIAL_STEP2_DATA);
   const [isLoading, setIsLoading] = useState(false);
 
   const bgClass =
@@ -99,14 +88,52 @@ export function StartNowSection({
       ? "bg-gradient-to-b from-muted/50 to-white"
       : "bg-white";
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleStep1Submit = async (e: FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    setIsLoading(false);
-    setIsSubmitted(true);
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "제출에 실패했습니다.");
+      }
+
+      setStep("step2");
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "제출에 실패했습니다. 다시 시도해주세요.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleStep2Submit = async (e: FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      const res = await fetch("/api/contact/step2", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: formData.email, ...step2Data }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "제출에 실패했습니다.");
+      }
+
+      setStep("done");
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "제출에 실패했습니다. 다시 시도해주세요.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -114,6 +141,10 @@ export function StartNowSection({
       ...prev,
       [e.target.name]: e.target.value,
     }));
+  };
+
+  const handleStep2Change = (data: Partial<Step2FormData>) => {
+    setStep2Data((prev) => ({ ...prev, ...data }));
   };
 
   return (
@@ -124,13 +155,25 @@ export function StartNowSection({
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <LeftContent />
-          <FormCard
-            formData={formData}
-            isSubmitted={isSubmitted}
-            isLoading={isLoading}
-            onChange={handleChange}
-            onSubmit={handleSubmit}
-          />
+          <FormCard>
+            {step === "step1" && (
+              <ContactForm
+                formData={formData}
+                isLoading={isLoading}
+                onChange={handleChange}
+                onSubmit={handleStep1Submit}
+              />
+            )}
+            {step === "step2" && (
+              <Step2Form
+                formData={step2Data}
+                isLoading={isLoading}
+                onChange={handleStep2Change}
+                onSubmit={handleStep2Submit}
+              />
+            )}
+            {step === "done" && <SuccessMessage />}
+          </FormCard>
         </div>
       </div>
     </section>

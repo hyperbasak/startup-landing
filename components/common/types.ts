@@ -25,3 +25,16 @@ export interface ContactFormData {
   contact: string;
   budget: string;
 }
+
+export interface Step2FormData {
+  industry: string;
+  businessModel: string;
+  targetAudience: string[];
+  primaryProblem: string;
+  coreValuePersona: string;
+}
+
+export interface SelectOption {
+  value: string;
+  label: string;
+}
