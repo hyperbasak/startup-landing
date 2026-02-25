@@ -6,9 +6,11 @@ import type { Comparison } from "../types";
 
 interface LegacyCardProps {
   comparisons: Comparison[];
+  title: string;
+  subtitle: string;
 }
 
-export function LegacyCard({ comparisons }: LegacyCardProps) {
+export function LegacyCard({ comparisons, title, subtitle }: LegacyCardProps) {
   return (
     <div className="relative bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl border border-gray-200 p-6 lg:p-8 overflow-hidden">
       <div className="flex items-center gap-3 mb-8">
@@ -16,8 +18,8 @@ export function LegacyCard({ comparisons }: LegacyCardProps) {
           <Minus className="w-6 h-6 text-gray-500" />
         </div>
         <div>
-          <h3 className="text-xl font-bold text-gray-600">일반 마케팅 대행사</h3>
-          <p className="text-sm text-gray-600">General Marketing Agency</p>
+          <h3 className="text-xl font-bold text-gray-600">{title}</h3>
+          <p className="text-sm text-gray-600">{subtitle}</p>
         </div>
       </div>
 

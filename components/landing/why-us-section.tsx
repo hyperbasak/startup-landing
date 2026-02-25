@@ -1,34 +1,40 @@
 "use client";
 
 import { ScrollIndicator } from "../common";
-import { COMPARISONS } from "./constants";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "../ui/tabs";
+import { COMPARISON_SETS } from "./constants";
 import { LegacyCard, GrowthBlockCard } from "./why-us";
+import type { ComparisonSet } from "./types";
 
-function SectionHeader() {
+function SectionHeader({ set }: { set: ComparisonSet; }) {
   return (
     <div className="text-center mb-12 lg:mb-16">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 mt-6 text-balance">
-        일반 마케팅 대행사 vs <span className="text-primary">Growth Block</span>
+        {set.mainCopy} vs <span className="text-primary">Growth Block</span>
       </h2>
       <p className="text-muted-foreground text-lg [word-break:keep-all]">
-        같은 비용, 완전히 다른 결과. 무엇이 다른지 직접 비교해보세요.
+        {set.subCopy}
       </p>
     </div>
   );
 }
 
-function ComparisonCards() {
+function ComparisonCards({ set }: { set: ComparisonSet; }) {
   return (
     <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
-      <LegacyCard comparisons={COMPARISONS} />
-      <GrowthBlockCard comparisons={COMPARISONS} />
+      <LegacyCard
+        comparisons={set.comparisons}
+        title={set.legacyTitle}
+        subtitle={set.legacySubtitle}
+      />
+      <GrowthBlockCard comparisons={set.comparisons} />
     </div>
   );
 }
 
 function ServiceNote() {
   return (
-    <div className="mt-8">
+    <div className="mt-16">
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 text-center">
         <p className="text-foreground font-medium text-lg [word-break:keep-all]">
           Growth Block은 단순 대행을 넘어,{" "}
@@ -47,7 +53,9 @@ function BottomCTA() {
     <div className="text-center mt-12 lg:mt-16">
       <p className="text-muted-foreground mb-6">
         여전히 고민되시나요?{" "}
-        <strong className="text-foreground">무료 진단으로 직접 확인해보세요.</strong>
+        <strong className="text-foreground">
+          무료 진단으로 직접 확인해보세요.
+        </strong>
       </p>
       <ScrollIndicator />
     </div>
@@ -56,10 +64,34 @@ function BottomCTA() {
 
 export function WhyUsSection() {
   return (
-    <section id="why-us" className="py-16 lg:py-24 bg-gradient-to-b from-white to-muted/30">
+    <section
+      id="why-us"
+      className="py-16 lg:py-24 bg-gradient-to-b from-white to-muted/30"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader />
-        <ComparisonCards />
+        <Tabs defaultValue="agency">
+          <div className="flex flex-col items-center gap-2.5 mb-2">
+            <TabsList className="h-auto p-1 bg-muted/60 backdrop-blur-sm border border-border/50 rounded-full w-full max-w-xl">
+              {COMPARISON_SETS.map((set) => (
+                <TabsTrigger
+                  key={set.id}
+                  value={set.id}
+                  className="flex-1 px-5 py-3 text-sm font-medium rounded-full [word-break:keep-all] transition-all duration-200 data-[state=active]:bg-primary/80 data-[state=active]:text-background data-[state=active]:shadow-lg data-[state=active]:shadow-foreground/15 data-[state=inactive]:hover:text-foreground"
+                >
+                  {set.tabLabel}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </div>
+
+          {COMPARISON_SETS.map((set) => (
+            <TabsContent key={set.id} value={set.id}>
+              <SectionHeader set={set} />
+              <ComparisonCards set={set} />
+            </TabsContent>
+          ))}
+        </Tabs>
+
         <ServiceNote />
         <BottomCTA />
       </div>
