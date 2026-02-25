@@ -39,7 +39,6 @@ export const INDUSTRY_OPTIONS: SelectOption[] = [
   { value: "SaaS", label: "IT Solution / SaaS" },
   { value: "플랫폼", label: "플랫폼 (매칭/커뮤니티 등)" },
   { value: "전문 서비스", label: "전문 서비스 (의료/법률/교육 등)" },
-  { value: "교육", label: "교육" },
 ];
 
 export const BUSINESS_MODEL_OPTIONS: SelectOption[] = [
