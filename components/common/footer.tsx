@@ -14,22 +14,11 @@ function BrandSection() {
 
 function CompanyInfo() {
   return (
-    <div className="space-y-3 md:text-right">
-      <h4 className="font-semibold mb-4">Business Info</h4>
-      <div className="space-y-1.5 text-sm text-white/50">
+    <div className="md:text-right">
+      <div className="text-sm text-white/50 space-y-1.5 md:text-right">
         <p>주식회사 하이퍼바삭 | 대표자: 김병수</p>
         <p>사업자등록번호: 351-88-03577</p>
         <p>서울특별시 강남구 선릉로 704</p>
-      </div>
-    </div>
-  );
-}
-
-function ContactSection() {
-  return (
-    <div className="space-y-3 md:text-right">
-      <h4 className="font-semibold mb-4">Contact</h4>
-      <div className="space-y-3 text-sm text-white/60">
         <p>
           <a
             href="mailto:hello@hyperbasak.com"
@@ -52,12 +41,14 @@ function BottomBar() {
       <div className="flex items-center gap-6 text-sm text-white/40">
         <a
           href="https://hyperbasak.notion.site/310c6eeafd3780a6be98e6b69e222352?source=copy_link"
+          target="_blank"
           className="hover:text-white/60 transition-colors"
         >
           개인정보처리방침
         </a>
         <a
           href="https://hyperbasak.notion.site/310c6eeafd3780c2a1c1d13c81855e65?source=copy_link"
+          target="_blank"
           className="hover:text-white/60 transition-colors"
         >
           이용약관
@@ -71,10 +62,9 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-white py-12 lg:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-10 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 lg:gap-16">
           <BrandSection />
           <CompanyInfo />
-          <ContactSection />
         </div>
         <BottomBar />
       </div>
