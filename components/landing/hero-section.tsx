@@ -18,7 +18,7 @@ function HeroBadge() {
 
 function HeroHeadline() {
   return (
-    <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-foreground leading-[1.4] [word-break:keep-all]">
+    <h1 className="text-3xl sm:text-4xl font-bold text-foreground leading-[1.4] [word-break:keep-all]">
       이제 귀사에도{" "}
       <span className="relative inline-block text-primary">
         CMO
@@ -126,10 +126,10 @@ export function HeroSection() {
     <section className="relative min-h-dvh lg:min-h-[800px] flex flex-col justify-center py-16 sm:py-24 lg:py-32 overflow-hidden bg-[#f0f1f0]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
-          <div className="flex-1 lg:max-w-[70%]">
+          <div className="flex-1 lg:max-w-[60%]">
             <HeroContent />
           </div>
-          <div className="lg:max-w-[30%]">
+          <div className="lg:max-w-[40%]">
             <Image
               src={hero}
               alt="hero image"
