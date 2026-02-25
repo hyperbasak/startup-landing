@@ -40,7 +40,7 @@ export function FeatureSection({
             {description}
           </p>
         </div>
-        <div className="">
+        <div>
           {points.map((point, index) => (
             <PointCard
               key={index}

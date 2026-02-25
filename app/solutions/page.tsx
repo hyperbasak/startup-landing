@@ -4,11 +4,11 @@ import { useEffect } from "react";
 
 import { Header } from "@/components/common/header";
 import { ConceptBridge } from "@/components/solutions/concept-bridge";
-import { DataStrategySection } from "@/components/solutions/data-strategy-section";
-import { RevenueOptimizationSection } from "@/components/solutions/revenue-optimization-section";
+import { ProfitOptimizationSection } from "@/components/solutions/profit-optimization-section";
+import { GrowthAccelerateSection } from "@/components/solutions/growth-accelerate-section";
 import { HeroSection } from "@/components/solutions/hero-section";
-import { UnifiedManagementSection } from "@/components/solutions/unified-management-section";
-import { AssetSystemSection } from "@/components/solutions/asset-system-section";
+import { DirectManagementSection } from "@/components/solutions/direct-management-section";
+import { DataAssetsSection } from "@/components/solutions/data-assets-section";
 import { StartNowSection } from "@/components/common/start-now-section";
 import { Footer } from "@/components/common/footer";
 
@@ -36,10 +36,10 @@ export default function SolutionsPage() {
       <ScrollHandler />
       <Header />
       <HeroSection />
-      <DataStrategySection />
-      <RevenueOptimizationSection />
-      <UnifiedManagementSection />
-      <AssetSystemSection />
+      <ProfitOptimizationSection />
+      <GrowthAccelerateSection />
+      <DirectManagementSection />
+      <DataAssetsSection />
       <ConceptBridge />
       <StartNowSection
         variant="gradient"

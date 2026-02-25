@@ -21,10 +21,10 @@ export const NAV_ITEMS: NavItem[] = [
     label: "성장 전략",
     href: "/solutions",
     children: [
-      { label: "데이터 전략", href: "/solutions#data-strategy" },
-      { label: "수익 최적화", href: "/solutions#revenue-optimization" },
-      { label: "통합 관리", href: "/solutions#unified-management" },
-      { label: "자산화 시스템", href: "/solutions#asset-system" },
+      { label: "수익 최적화", href: "/solutions#profit-optimization" },
+      { label: "성장 가속", href: "/solutions#growth-accelerate" },
+      { label: "전담 운영", href: "/solutions#direct-management" },
+      { label: "자산 구축", href: "/solutions#data-assets" },
     ],
   },
 ];

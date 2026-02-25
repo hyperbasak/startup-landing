@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { BarChart3, Filter, UserCog, Database, ChevronRight } from "lucide-react";
+import { BarChart3, UserCog, Database, Gauge, FastForward } from "lucide-react";
 
 const COMPETENCY = [
   {
@@ -13,24 +12,24 @@ const COMPETENCY = [
     borderColor: "border-blue-500/20",
   },
   {
-    title: "결제 전환율을 높이는 퍼널 최적화",
-    description: "퍼널 누수 차단과 구매 전환 최적화로 수익을 극대화",
-    icon: Filter,
+    title: "업종 데이터를 통한 성장 가속",
+    description: "검증된 도메인 데이터를 즉시 투입하여 목표 도달 시간을 단축",
+    icon: FastForward,
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10",
     borderColor: "border-emerald-500/20",
   },
   {
-    title: "운영 리소스를 혁신하는 전담 CMO",
-    description: "CMO의 통합 관제로 리소스 제로화 및 효율 최적화",
+    title: "실무를 완벽히 책임지는 전담 본부",
+    description: "모든 운영 프로세스를 직접 수행하여 귀사의 관리 리소스를 제거",
     icon: UserCog,
     color: "text-amber-500",
     bgColor: "bg-amber-500/10",
     borderColor: "border-amber-500/20",
   },
   {
-    title: "경쟁력이 되는 마케팅 자산화",
-    description: "모든 성과를 데이터로 자산화해 성공을 재현하는 구조",
+    title: "자산화되는 독점적 데이터 권력",
+    description: "성공 공식을 시스템화하여 인적 의존도 없는 영구적 자산을 구축",
     icon: Database,
     color: "text-purple-500",
     bgColor: "bg-purple-500/10",
