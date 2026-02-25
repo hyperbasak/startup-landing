@@ -41,7 +41,7 @@ export function ConceptBridge() {
 
         <ScrollIndicator
           classNameTextColor="text-white"
-          size={7}
+          className="w-5 h-5 sm:w-7 sm:h-7"
         />
       </div>
     </section>

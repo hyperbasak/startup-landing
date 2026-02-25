@@ -231,7 +231,7 @@ export function Step2Form({
       </div>
 
       <form onSubmit={onSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <SelectField
             label="주요 산업군"
             options={INDUSTRY_OPTIONS}

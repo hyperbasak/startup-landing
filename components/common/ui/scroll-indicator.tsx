@@ -1,16 +1,16 @@
 interface ScrollIndicatorProps {
   classNameTextColor?: string;
-  size?: number;
+  className?: string;
 }
 
 export function ScrollIndicator({
   classNameTextColor = "text-primary/60",
-  size = 6,
+  className = "w-6 h-6",
 }: ScrollIndicatorProps) {
   return (
     <div className="animate-bounce">
       <svg
-        className={`w-${size} h-${size} mx-auto ${classNameTextColor}`}
+        className={`mx-auto ${className} ${classNameTextColor}`}
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"

@@ -27,7 +27,7 @@ export function TrustSignals() {
   ];
 
   return (
-    <div className="flex flex-wrap items-center gap-6 pt-4 border-t border-border">
+    <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-4 border-t border-border">
       {signals.map((signal, index) => (
         <div
           key={index}

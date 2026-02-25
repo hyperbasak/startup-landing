@@ -36,7 +36,7 @@ export function GrowthBlockCard({ comparisons }: GrowthBlockCardProps) {
               <p className="text-xs font-medium text-primary mb-1 flex items-center gap-1.5">
                 {item.category}
               </p>
-              <p className="text-foreground font-medium">{item.growthBlock}</p>
+              <p className="text-foreground font-medium [word-break:keep-all]">{item.growthBlock}</p>
             </div>
           </div>
         ))}
@@ -47,7 +47,7 @@ export function GrowthBlockCard({ comparisons }: GrowthBlockCardProps) {
         <div className="absolute top-8 right-8 w-12 h-12 bg-accent/20 rounded-full blur-xl" />
       </div>
 
-      <div className="absolute -top-3 -right-3 bg-accent text-accent-foreground text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">
+      <div className="absolute -top-3 right-3 sm:-right-3 bg-accent text-accent-foreground text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">
         RECOMMENDED
       </div>
     </div>

@@ -69,8 +69,8 @@ function HeroSubheadline() {
   return (
     <p className="text-lg text-muted-foreground leading-[1.4] [word-break:keep-all]">
       <span>
-        Growth Block 하나로 스케일업에 필요한 모든 전략과 실행을 끝내세요.
-        <br />
+        Growth Block 하나로 스케일업에 필요한 모든 전략과 실행을 끝내세요.{" "}
+        <br className="hidden sm:block" />
         수익 구조를 직접 설계하고 운영하는 CMO 팀이, 귀사만의 독보적인 성장 시스템을 완성합니다.
       </span>
     </p>
@@ -103,7 +103,7 @@ function HeroCTAButtons() {
           </a>
         </Button>
       </div>
-      <p className="text-sm text-muted-foreground">
+      <p className="text-sm text-muted-foreground [word-break:keep-all]">
         귀사 도메인 분석부터 예상 수익 누수 지점과 맞춤형 액션 플랜까지, 전문 리포트로 먼저 확인해 보세요.
       </p>
     </div>
@@ -123,7 +123,7 @@ function HeroContent() {
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[800px] flex flex-col justify-center py-24 lg:py-32 overflow-hidden bg-[#f0f1f0]">
+    <section className="relative min-h-dvh lg:min-h-[800px] flex flex-col justify-center py-16 sm:py-24 lg:py-32 overflow-hidden bg-[#f0f1f0]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
           <div className="flex-1 lg:max-w-[70%]">

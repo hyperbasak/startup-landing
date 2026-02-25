@@ -1,7 +1,7 @@
 "use client";
 
 import type { ChangeEvent, FormEvent } from "react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import { Clock, Zap } from "lucide-react";
 
@@ -61,9 +61,9 @@ function LeftContent() {
   );
 }
 
-function FormCard({ children }: { children: React.ReactNode; }) {
+function FormCard({ children, ref }: { children: React.ReactNode; ref?: React.Ref<HTMLDivElement>; }) {
   return (
-    <div className="relative">
+    <div className="relative" ref={ref}>
       <div className="bg-white rounded-3xl border border-border shadow-2xl shadow-primary/10 p-6 sm:p-8 lg:p-10">
         {children}
       </div>
@@ -82,6 +82,11 @@ export function StartNowSection({
   const [formData, setFormData] = useState<ContactFormData>(INITIAL_FORM_DATA);
   const [step2Data, setStep2Data] = useState<Step2FormData>(INITIAL_STEP2_DATA);
   const [isLoading, setIsLoading] = useState(false);
+  const formRef = useRef<HTMLDivElement>(null);
+
+  const scrollToForm = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const bgClass =
     variant === "gradient"
@@ -105,6 +110,7 @@ export function StartNowSection({
       }
 
       setStep("step2");
+      scrollToForm();
     } catch (err) {
       alert(err instanceof Error ? err.message : "제출에 실패했습니다. 다시 시도해주세요.");
     } finally {
@@ -129,6 +135,7 @@ export function StartNowSection({
       }
 
       setStep("done");
+      scrollToForm();
     } catch (err) {
       alert(err instanceof Error ? err.message : "제출에 실패했습니다. 다시 시도해주세요.");
     } finally {
@@ -155,7 +162,7 @@ export function StartNowSection({
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <LeftContent />
-          <FormCard>
+          <FormCard ref={formRef}>
             {step === "step1" && (
               <Step1Form
                 formData={formData}

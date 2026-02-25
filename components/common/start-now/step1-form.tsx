@@ -93,7 +93,7 @@ export function Step1Form({
       </div>
 
       <form onSubmit={onSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <FormField
             id="name"
             label="이름"
@@ -110,7 +110,7 @@ export function Step1Form({
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <FormField
             id="company"
             label="회사명"

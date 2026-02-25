@@ -36,7 +36,7 @@ export function LegacyCard({ comparisons, title, subtitle }: LegacyCardProps) {
               <p className="text-xs font-medium text-gray-500 mb-1">
                 {item.category}
               </p>
-              <p className="text-gray-700">{item.legacy}</p>
+              <p className="text-gray-700 [word-break:keep-all]">{item.legacy}</p>
             </div>
           </div>
         ))}

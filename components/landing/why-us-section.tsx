@@ -9,8 +9,12 @@ import type { ComparisonSet } from "./types";
 function SectionHeader({ set }: { set: ComparisonSet; }) {
   return (
     <div className="text-center mb-12 lg:mb-16">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 mt-6 text-balance">
-        {set.mainCopy} vs <span className="text-primary">Growth Block</span>
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 mt-6 text-balance [word-break:keep-all]">
+        {set.mainCopy}
+        <br className="sm:hidden" />
+        vs
+        <br className="sm:hidden" />
+        <span className="text-primary">Growth Block</span>
       </h2>
       <p className="text-muted-foreground text-lg [word-break:keep-all]">
         {set.subCopy}
@@ -71,12 +75,12 @@ export function WhyUsSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <Tabs defaultValue="agency">
           <div className="flex flex-col items-center gap-2.5 mb-2">
-            <TabsList className="h-auto p-1 bg-muted/60 backdrop-blur-sm border border-border/50 rounded-full w-full max-w-xl">
+            <TabsList className="h-auto p-1 bg-muted/60 backdrop-blur-sm border border-border/50 rounded-xl sm:rounded-full w-full max-w-xl">
               {COMPARISON_SETS.map((set) => (
                 <TabsTrigger
                   key={set.id}
                   value={set.id}
-                  className="flex-1 px-5 py-3 text-sm font-medium rounded-full [word-break:keep-all] transition-all duration-200 data-[state=active]:bg-primary/80 data-[state=active]:text-background data-[state=active]:shadow-lg data-[state=active]:shadow-foreground/15 data-[state=inactive]:hover:text-foreground"
+                  className="flex-1 px-3 sm:px-5 py-2 sm:py-3 text-xs sm:text-sm font-medium rounded-lg sm:rounded-full text-center leading-snug whitespace-normal [word-break:keep-all] transition-all duration-200 data-[state=active]:bg-primary/80 data-[state=active]:text-background data-[state=active]:shadow-lg data-[state=active]:shadow-foreground/15 data-[state=inactive]:hover:text-foreground"
                 >
                   {set.tabLabel}
                 </TabsTrigger>

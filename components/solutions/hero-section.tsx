@@ -49,9 +49,9 @@ export function HeroSection() {
 
         {/* Sub copy */}
         <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-12 [word-break:keep-all]">
-          일시적인 매출 상승은 누구나 만들 수 있습니다.
+          일시적인 매출 상승은 누구나 만들 수 있습니다.{" "}
           <br className="hidden sm:block" />
-          하지만 그 과정에서 얻은 인사이트가 자산으로 남지 않는다면,
+          하지만 그 과정에서 얻은 인사이트가 자산으로 남지 않는다면,{" "}
           <br className="hidden sm:block" />
           그것은 성장이 아니라 소모입니다.
         </p>
@@ -69,7 +69,7 @@ export function HeroSection() {
         {/* Key message */}
         <div className="inline-block">
           <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white [word-break:keep-all] leading-relaxed">
-            Growth Block의 4가지 핵심 전략은
+            Growth Block의 4가지 핵심 전략은{" "}
             <br className="hidden sm:block" />
             마케팅의 모든 과정을 귀사의{" "}
             <span className="relative inline-block text-[#A2E3FF]">
