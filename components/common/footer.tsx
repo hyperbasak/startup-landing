@@ -34,7 +34,7 @@ function CompanyInfo() {
 
 function BottomBar() {
   return (
-    <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div className="border-t border-white/10 mt-6 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
       <div className="text-sm text-white/40">
         © 2026 HyperBasak Inc. All rights reserved.
       </div>
