@@ -20,7 +20,7 @@ export function PointCard({ main, sub, visual }: PointCardProps) {
         </p>
       </div>
       <div className="flex-1 w-full flex items-center lg:border-l lg:border-border">
-        <div className="w-full bg-muted/50 p-5 lg:p-6 lg:aspect-[16/10] flex items-center justify-center">
+        <div className="w-full bg-[#FAFAFB] px-2 lg:aspect-[16/10] flex items-center justify-center">
           {visual}
         </div>
       </div>
