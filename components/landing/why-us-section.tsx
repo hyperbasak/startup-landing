@@ -10,9 +10,9 @@ function SectionHeader({ set }: { set: ComparisonSet; }) {
   return (
     <div className="text-center mb-12 lg:mb-16">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 mt-6 text-balance [word-break:keep-all]">
-        {set.mainCopy}
+        {set.mainCopy}{" "}
         <br className="sm:hidden" />
-        vs
+        vs{" "}
         <br className="sm:hidden" />
         <span className="text-primary">Growth Block</span>
       </h2>
