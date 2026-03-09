@@ -1,7 +1,7 @@
 export interface Comparison {
   category: string;
   legacy: string;
-  growthBlock: string;
+  blockMarketing: string;
 }
 
 export interface ComparisonSet {

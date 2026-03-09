@@ -5,7 +5,7 @@ export function OrganizationJsonLd() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Growth Block",
+    name: "Block Marketing",
     legalName: "주식회사 하이퍼바삭",
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
@@ -29,10 +29,10 @@ export function OrganizationJsonLd() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "Growth Block 마케팅 컨설팅",
+    name: "Block Marketing 마케팅 컨설팅",
     provider: {
       "@type": "Organization",
-      name: "Growth Block",
+      name: "Block Marketing",
     },
     description:
       "수익 구조 설계부터 운영까지, 비즈니스 맞춤형 성장 시스템 구축. 데이터 기반 의사결정, 수익 최적화, 통합 운영 관리, 전략 자산화 시스템.",
@@ -53,12 +53,12 @@ export function OrganizationJsonLd() {
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Growth Block",
+    name: "Block Marketing",
     url: SITE_URL,
     inLanguage: "ko",
     publisher: {
       "@type": "Organization",
-      name: "Growth Block",
+      name: "Block Marketing",
     },
   };
 

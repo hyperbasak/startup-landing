@@ -19,8 +19,8 @@ const SITE_URL =
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Growth Block | 수익 구조 설계부터 운영까지",
-    template: "%s | Growth Block",
+    default: "Block Marketing | 수익 구조 설계부터 운영까지",
+    template: "%s | Block Marketing",
   },
   description:
     "단순 광고 집행을 넘어 비즈니스 맞춤형 성장 시스템을 구축합니다. 도메인 분석으로 누수 지점을 판독하고, 전략과 실행을 동시에 책임지는 파트너 CMO 팀의 1:1 맞춤 컨설팅을 경험하세요.",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "마케팅 컨설팅",
     "퍼포먼스 마케팅",
     "성장 전략",
-    "Growth Block",
+    "Block Marketing",
     "수익 구조 설계",
     "LTV 최적화",
     "마케팅 대행사",
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ko_KR",
     url: SITE_URL,
-    siteName: "Growth Block",
-    title: "Growth Block | 수익 구조 설계부터 운영까지",
+    siteName: "Block Marketing",
+    title: "Block Marketing | 수익 구조 설계부터 운영까지",
     description:
       "단순 광고 집행을 넘어 비즈니스 맞춤형 성장 시스템을 구축합니다. 파트너 CMO 팀의 1:1 맞춤 컨설팅을 경험하세요.",
     images: [
@@ -63,13 +63,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Growth Block - 수익 구조 설계부터 운영까지",
+        alt: "Block Marketing - 수익 구조 설계부터 운영까지",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growth Block | 수익 구조 설계부터 운영까지",
+    title: "Block Marketing | 수익 구조 설계부터 운영까지",
     description:
       "단순 광고 집행을 넘어 비즈니스 맞춤형 성장 시스템을 구축합니다. 파트너 CMO 팀의 1:1 맞춤 컨설팅을 경험하세요.",
     images: ["/og-image.png"],

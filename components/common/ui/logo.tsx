@@ -32,10 +32,10 @@ export function Logo({
       onClick={handleClick}
       className={`flex items-center gap-2 ${className}`}
     >
-      <Image src="/logo.png" alt="Growth Block" width={32} height={32} />
+      <Image src="/logo.png" alt="Block Marketing" width={32} height={32} />
       {showText && (
         <span className={`font-semibold text-lg ${textClassName}`}>
-          Growth Block
+          Block Marketing
         </span>
       )}
     </Link>

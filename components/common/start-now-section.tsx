@@ -39,7 +39,7 @@ function SectionHeader() {
       </h2>
       <p className="text-lg text-muted-foreground leading-relaxed [word-break:keep-all]">
         귀사 비즈니스 산업군에 특화된 표준 지표와 추정되는 수익 누수 지점을 판독합니다.
-        Growth Block의 전략적 가설이 담긴 <strong className="text-foreground">진단 리포트</strong>를 무료로 제공합니다.
+        Block Marketing의 전략적 가설이 담긴 <strong className="text-foreground">진단 리포트</strong>를 무료로 제공합니다.
       </p>
     </div>
   );

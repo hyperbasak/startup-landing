@@ -41,7 +41,7 @@ function HeroHeadline() {
       가 합류합니다.
       <br className="block" />
       <span className="relative inline-block text-primary">
-        Growth Block
+        Block Marketing
         <svg
           className="absolute -bottom-1 left-0 w-full"
           viewBox="0 0 200 8"
@@ -69,7 +69,7 @@ function HeroSubheadline() {
   return (
     <p className="text-lg text-muted-foreground leading-[1.4] [word-break:keep-all]">
       <span>
-        Growth Block 하나로 스케일업에 필요한 모든 전략과 실행을 끝내세요.{" "}
+        Block Marketing 하나로 스케일업에 필요한 모든 전략과 실행을 끝내세요.{" "}
         <br className="hidden sm:block" />
         수익 구조를 직접 설계하고 운영하는 CMO 팀이, 귀사만의 독보적인 성장 시스템을 완성합니다.
       </span>

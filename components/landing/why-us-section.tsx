@@ -3,7 +3,7 @@
 import { ScrollIndicator } from "../common";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../ui/tabs";
 import { COMPARISON_SETS } from "./constants";
-import { LegacyCard, GrowthBlockCard } from "./why-us";
+import { LegacyCard, BlockMarketingCard } from "./why-us";
 import type { ComparisonSet } from "./types";
 
 function SectionHeader({ set }: { set: ComparisonSet; }) {
@@ -14,7 +14,7 @@ function SectionHeader({ set }: { set: ComparisonSet; }) {
         <br className="sm:hidden" />
         vs{" "}
         <br className="sm:hidden" />
-        <span className="text-primary">Growth Block</span>
+        <span className="text-primary">Block Marketing</span>
       </h2>
       <p className="text-muted-foreground text-lg [word-break:keep-all]">
         {set.subCopy}
@@ -31,7 +31,7 @@ function ComparisonCards({ set }: { set: ComparisonSet; }) {
         title={set.legacyTitle}
         subtitle={set.legacySubtitle}
       />
-      <GrowthBlockCard comparisons={set.comparisons} />
+      <BlockMarketingCard comparisons={set.comparisons} />
     </div>
   );
 }
@@ -41,7 +41,7 @@ function ServiceNote() {
     <div className="mt-16">
       <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 text-center">
         <p className="text-foreground font-medium text-lg [word-break:keep-all]">
-          Growth Block은 단순 대행을 넘어,{" "}
+          Block Marketing은 단순 대행을 넘어,{" "}
           <span className="text-primary">
             귀사의 성장 시스템을 함께 구축하는 프리미엄 파트너십 서비스
           </span>

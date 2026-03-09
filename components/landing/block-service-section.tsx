@@ -77,7 +77,7 @@ function SectionHeader() {
         <span className="text-primary">마케팅 블록</span>으로 최적의 성장 지름길을 개척합니다.
       </h2>
       <p className="text-slate-600 text-lg leading-relaxed [word-break:keep-all]">
-        Growth Block은 이탈의 빈틈을 메우는 것을 넘어, 유저 여정을 가장 효율적인 경로로 재설계합니다.
+        Block Marketing은 이탈의 빈틈을 메우는 것을 넘어, 유저 여정을 가장 효율적인 경로로 재설계합니다.
       </p>
     </div>
   );
